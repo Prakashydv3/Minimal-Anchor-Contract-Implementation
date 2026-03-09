@@ -10,10 +10,10 @@ getAnchor(...) external view returns (...)     // Read only
 
 ### Missing Functions (Proof of Immutability)
 ```
-❌ updateAnchor() - Does not exist
-❌ deleteAnchor() - Does not exist
-❌ modifyAnchor() - Does not exist
-❌ Owner/Admin functions - Do not exist
+updateAnchor() - Does not exist
+deleteAnchor() - Does not exist
+modifyAnchor() - Does not exist
+Owner/Admin functions - Do not exist
 ```
 
 ---
@@ -56,10 +56,10 @@ anchors[anchorId] = Anchor({...});  // Single write
 bytes32 id = createAnchor("type", 0xaaa..., 0x000..., 1);
 
 // Attempt modification - NO FUNCTION EXISTS
-// updateAnchor(id, newHash) ❌ 
+// updateAnchor(id, newHash) 
 
 // Verify unchanged
-assert(getAnchor(id).artifactHash == 0xaaa...); ✅
+assert(getAnchor(id).artifactHash == 0xaaa...);
 ```
 
 **Result**: Immutable after creation.
@@ -77,7 +77,7 @@ Proof: No mutation functions exist
 
 ## Conclusion
 
-✅ **NON-MUTATION GUARANTEED**
+**NON-MUTATION GUARANTEED**
 - Append-only structure
 - Zero update paths
 - Zero delete paths

@@ -84,15 +84,15 @@ Anchor 3:
 ## No Semantic Validation
 
 ### What Contract DOES
-✅ Store parentHash value
-✅ Allow retrieval of parentHash
-✅ Enable structural linking
+ Store parentHash value
+ Allow retrieval of parentHash
+ Enable structural linking
 
 ### What Contract DOES NOT
-❌ Validate parent exists
-❌ Verify parent type matches
-❌ Enforce lineage rules
-❌ Interpret relationship meaning
+ Validate parent exists
+ Verify parent type matches
+ Enforce lineage rules
+ Interpret relationship meaning
 
 **Design**: Structural linking only, no semantic interpretation.
 
@@ -111,14 +111,14 @@ Anchor memory a3 = getAnchor(0x333...);
 **Step 2**: Get Parent (Anchor 2)
 ```solidity
 Anchor memory a2 = getAnchor(0x222...);
-// a2.anchorId = 0x222... ✅ Matches
+// a2.anchorId = 0x222...  Matches
 // a2.parentHash = 0x111...
 ```
 
 **Step 3**: Get Grandparent (Anchor 1)
 ```solidity
 Anchor memory a1 = getAnchor(0x111...);
-// a1.anchorId = 0x111... ✅ Matches
+// a1.anchorId = 0x111...  Matches
 // a1.parentHash = 0x000... (root)
 ```
 
@@ -156,16 +156,16 @@ Projection (references registry):
 ## Linkability Properties
 
 ### Supported Patterns
-✅ Linear chains (A → B → C)
-✅ Multiple roots (A, B, C independent)
-✅ Cross-references (D → B from different chain)
-✅ Optional linking (parentHash = 0x000...)
+ Linear chains (A → B → C)
+ Multiple roots (A, B, C independent)
+ Cross-references (D → B from different chain)
+ Optional linking (parentHash = 0x000...)
 
 ### Not Enforced
-❌ Parent existence validation
-❌ Cycle prevention
-❌ Type matching
-❌ Lineage semantics
+ Parent existence validation
+ Cycle prevention
+ Type matching
+ Lineage semantics
 
 **Reason**: Off-chain system maintains sovereignty over interpretation.
 
@@ -242,7 +242,7 @@ function verifyChain(bytes32 leafId, bytes32 expectedRootId) {
 
 ## Conclusion
 
-✅ **PARENT-CHILD LINKABILITY PROVEN**
+ **PARENT-CHILD LINKABILITY PROVEN**
 
 - parentHash field enables structural linking
 - Multiple anchors successfully chain via parentHash

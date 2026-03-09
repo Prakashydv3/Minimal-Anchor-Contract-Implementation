@@ -136,13 +136,13 @@ Off-Chain System → Generate Artifact Hash → Create Anchor → Emit Event
 
 ## Non-Goals
 
-- ❌ Governance logic
-- ❌ Registry storage
-- ❌ Policy validation
-- ❌ Authority checks
-- ❌ Execution logic
-- ❌ Token mechanics
-- ❌ Business logic
+-  Governance logic
+-  Registry storage
+-  Policy validation
+-  Authority checks
+-  Execution logic
+-  Token mechanics
+-  Business logic
 
 ## Schema Version History
 

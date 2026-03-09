@@ -42,7 +42,7 @@ AnchorCreated(
 ```
 
 ### Status
-✅ **SUCCESS** - Root anchor created
+ **SUCCESS** - Root anchor created
 
 ---
 
@@ -83,7 +83,7 @@ AnchorCreated(
 ```
 
 ### Status
-✅ **SUCCESS** - Linked anchor created (parent: 0x7d3e...)
+ **SUCCESS** - Linked anchor created (parent: 0x7d3e...)
 
 ---
 
@@ -124,7 +124,7 @@ AnchorCreated(
 ```
 
 ### Status
-✅ **SUCCESS** - Independent anchor created (no parent)
+ **SUCCESS** - Independent anchor created (no parent)
 
 ---
 
@@ -165,7 +165,7 @@ AnchorCreated(
 ```
 
 ### Status
-✅ **SUCCESS** - Cross-referenced anchor created (parent: 0x8e4f...)
+ **SUCCESS** - Cross-referenced anchor created (parent: 0x8e4f...)
 
 ---
 
@@ -205,20 +205,20 @@ getAnchor(0x8e4f5a3b2c9d0e1f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f)
 ```
 On-chain:  0xb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
 Off-chain: 0xb2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
-Result: ✅ MATCH
+Result:  MATCH
 ```
 
 **Step 3**: Verify parent linkage
 ```
 parentHash: 0x7d3e4f2a1b8c9d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e
-Parent exists: ✅ YES
-Parent is valid: ✅ YES
+Parent exists:  YES
+Parent is valid:  YES
 ```
 
 **Step 4**: Verify timestamp
 ```
 Timestamp: 1704153600 (2024-01-02 00:00:00 UTC)
-Reasonable: ✅ YES
+Reasonable:  YES
 ```
 
 **Conclusion**: Anchor is valid and immutable.
